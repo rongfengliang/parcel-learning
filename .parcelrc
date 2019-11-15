@@ -22,8 +22,8 @@
     "*.raw": "@parcel/packager-raw"
   },
   "optimizers": {
-    "*.js": ["@parcel/optimizer-uglify"],
-    "*.css": ["@parcel/optimizer-cssnano"],
+    "*.js": ["@parcel/optimizer-uglify","@parcel/optimizer-terser"],
+    "*.css": ["@parcel/optimizer-cssnano","@parcel/optimizer-csso"],
     "*.html": ["@parcel/optimizer-htmlnano"],
     "*.{png,jpg,jpeg,svg,...}": ["@parcel/optimizer-imagemin"]
   },
